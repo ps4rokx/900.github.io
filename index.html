@@ -53,12 +53,19 @@
     <pre id='console'>Waiting for user interaction...</pre>
   </div>
 
-
-
   <script src='./index.js'></script>
   <script>
-    CheckFW()
+    CheckFW();
+    
+    // إظهار الرسالة وتنبيه النجاح عند الضغط على زر GoldHen
+    document.getElementById("jailbreak").addEventListener("click", function() {
+        setTimeout(function() {
+            var msg = "GoldHEN 2.3 loaded!\ncoded by SiSTRo";
+            alert(msg);
+            document.getElementById('console').innerText = msg;
+        }, 4000);
+    });
   </script>
 </body>
 
-</html>
+  </html>
